@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Patua+One&display=swap");
+
+:root {
+  --primary: #fea116;
+  --light: #f1f8ff;
+  --dark: #0f172b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(sushi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+}
+
+.logo {
+  color: #fea116;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1.5rem;
+}
+
+.logo .navbar-logo {
+  padding: 0.5rem;
+  color: var(--light);
+}
+
+.logo .navbar-logo span {
+  color: var(--primary);
+  padding: 0.5rem;
+}
+
+.navbar-nav {
+  margin: 1.5rem;
+  background-color: transparent;
+  margin-right: 30em;
+  padding: 10px;
+}
+
+.navbar-nav li {
+  display: inline-block;
+}
+
+.navbar-nav li a {
+  color: var(--light);
+  margin: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#Book {
+  background-color: #fea116;
+  padding: 15px;
+  color: var(--light) !important;
+  border-radius: 3px;
+}
+
+.navbar-nav li a:hover {
+  color: var(--primary);
+  transition: 0.3s ease-in;
+}
+
+.dropdown-menu {
+  display: block;
+  background-color: var(--primary);
+  width: 10rem;
+  height: 9rem;
+  padding: 8px;
+  color: var(--primary);
+  margin-left: 9px;
+  margin-right: 10px;
+  position: absolute;
+  display: none;
+}
+
+.dropdown-menu a {
+  color: var(--light) !important;
+  font-size: 12px;
+}
+
+.navbar-nav li:hover .dropdown-menu {
+  display: block;
+  background-color: var(--primary);
+}
+
+.dropdown-menu li {
+  text-decoration: none;
+  color: #f1f8ff;
+  padding: 6px;
+}
+
+/* Hero Section */
+
+.content {
+  color: var(--light);
+  padding: 100px;
+  margin-bottom: 100px;
+  margin-right: 40em;
+  margin-top: 30px;
+}
+
+.content h1 {
+  font-size: 3em;
+}
+
+.content p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.content button {
+  background-color: #fea116;
+  padding: 15px;
+  color: var(--light) !important;
+  border-radius: 3px;
+}
